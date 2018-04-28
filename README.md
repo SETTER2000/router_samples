@@ -1,2 +1,2 @@
 # router_samples
-TypeScript & Angular 2
+TypeScript and Angular 2

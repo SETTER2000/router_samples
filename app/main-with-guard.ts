@@ -12,8 +12,8 @@ import {UnsavedChangesGuard} from "./guards/unsaved_changes.guard";
 
 const routes: Routes = [
     {path: '',        component: HomeComponent},
-    {path: 'product', component: ProductDetailComponent,
-        canActivate:[LoginGuard], canDeactivate:[UnsavedChangesGuard]}
+    {path: 'product', component: ProductDetailComponent, canActivate:[LoginGuard],
+        canDeactivate:[UnsavedChangesGuard]}
 ];
 
 @Component({
@@ -22,6 +22,7 @@ const routes: Routes = [
         <a [routerLink]="['/']">Home</a>
         <a [routerLink]="['/product']">Product Details</a> 
         <router-outlet></router-outlet>
+        
     `
 })
 class AppComponent {}
